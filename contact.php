@@ -1,3 +1,30 @@
+<?php 
+
+
+if(isset($_POST['contactButton'])){
+
+    $fullname = $_POST['fullname'];
+    $email = $_POST['email'];
+    $description = $_POST['description'];
+
+    #FILTERING STRINGS
+
+    #name
+    $fullname = strip_tags($fullname);
+    $fullname = ucfirst(strtolower($fullname));
+
+    #email
+    $email = strip_tags($email);
+
+    #message
+    $description = strip_tags($description);
+
+
+}# end of if button pressed
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +36,7 @@
     <link rel="stylesheet" href="css/contact.css">
 
     <meta name="description" content="Get professional web design solutions with tyler laceby design. I offer custom websites with responsive design and seo optimization in mind. Make your businesses more profitable">
-    <meta name="keywords" content="PSD To HTML,seo,responsive deisgn ,responsive development,services, web design">
+    <meta name="keywords" content="Contact,Hire Me">
     <meta name="author" content="Tyler Laceby">
     <title>Contact | Tylerlaceby | Design & Development</title>
 </head>
@@ -39,7 +66,7 @@
                     <div class="input">
                         <label>Full Name<span class='red-text'>*</span></label>
                         <br>
-                        <input type="text" name="fname" required>
+                        <input type="text" name="fullname" required>
                     </div>
 
                     <div class="input">
@@ -55,15 +82,16 @@
                     </div>
 
                     <div class="input">
-                        <input type="submit" value="Submit" name="contactButton">
+                        <input type="submit" value='Submit' name="contactButton">
                     </div>
 
                 </form>
             </div> <!-- contact form div end-->
         </div> <!-- end of container div -->
     </section>
-    
-    <?php  include "includes/footer.php"; ?>
+
+    <?php  include "includes/footer.php";
+    ?>
 
 
 

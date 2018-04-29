@@ -15,7 +15,7 @@
     font-weight: 200;
     font-family: "Helvetica neue";
     font-size: 22px;
-    max-width: 900px;
+    max-width: 750px;
     margin: 0 auto;
 }
 
@@ -135,4 +135,20 @@ footer {
         margin: 0 auto;
     }
     
+    #work-together h2 {
+        font-size: 33px;
+        padding: 0 10px;
+    }
+    
+    #work-together p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .input label {
+        font-size: 18px;
+    }
+
 }
+
+

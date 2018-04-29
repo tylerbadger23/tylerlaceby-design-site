@@ -1,0 +1,143 @@
+
+.service-bg {
+    background-image: url('../assets/bg-services.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh; 
+}
+
+
+.current {
+    border-bottom: 4px solid #D22020;
+} 
+
+#services {
+    background: #fff;
+}
+
+.service-header {
+    text-align: center;
+    padding-top: 250px;
+    font-size: 40px;
+    color: #fff;
+}
+.header-services {
+    padding: 200px 0 18px 0;
+    color: rgb(216, 216, 216);
+    font-weight: 900; 
+    text-align: center;
+    font-size: 45px;
+}
+
+.service-container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+
+.service-container p {
+    font-size: 22px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Helvetica neue";
+    font-weight: 200;
+    max-width: 700px;
+    margin: 0 auto;;
+}
+
+.service-container h3 {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Futura";
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.service-container h2 {
+    color: #D22020;
+    padding-top: 70px; 
+    text-align: center;
+    font-weight: 900;
+    font-family: "Futura";
+    font-size: 36px;
+}
+
+.row-services {
+
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 47% 47%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.row-services-bottom {
+    padding: 80px 20px 70px 20px;
+}
+
+.row-services-top{
+    padding: 110px 20px 0 20px;   
+}
+
+.row-services img {
+    margin-bottom: 30px;
+}
+
+
+.row-services h3 {
+    margin: 0 0 20px 0;
+}
+.row-services img {
+    width: 102px;
+    height: 100px;
+    
+}
+
+footer {
+    background: #D22020;
+    color: #fff;
+    font-family: "Helvetica neue";
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 100;
+}
+
+
+
+
+
+/* media querys
+
+*/
+
+
+/*  small mobile screens and down*/
+@media  only screen and  (max-width: 800px) {
+    
+   .row-services {
+       display: block;
+   } 
+
+   .row-services p {
+       padding-bottom: 70px;
+   }
+
+
+}
+
+@media  only screen and  (min-width: 1550px) {
+    .service-header {
+        padding: 350px 0 18px 0;
+        color: #fff;
+        font-weight: 900; 
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .service-bg {
+        height: 94vh;;
+    }
+
+    
+}
